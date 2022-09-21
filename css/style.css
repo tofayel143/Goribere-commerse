@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.logo{
+    position:absolute;
+    left: 7%;
+    top: 14%;
+    transform: translate(-15%,-50%);
+}
+.logo img{
+    height: 120px;
+}
+.searcharea{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    height: 45px;
+    width: 170px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(95, 95, 95, 0.26);
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgba(167, 158, 245, 0.1);
+}
+.searcharea input{
+    height: 20px;
+    width: 90px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: 1F1F1F;
+    font-size: 1rem;
+    padding: 0px 10px;
+
+}
+.searcharea input::placeholder{
+    color: 1D1D1D;
+    font-weight: 400px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image1{
+    position:absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+}
+.image1 img{
+    height: 300px;
+}
+.section1{
+    position: absolute;
+	top: 47%;
+	left:90%;
+	transform: translate(-90%,-50%);
+}
+.section1 h1, h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: 0%;
+    line-height: 65px;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    letter-spacing: 3px;
+    color: rgba(39,39,39,0.80);
+    text-transform: uppercase;
+}
+span{
+    color: blueviolet;
+}
+.section1 h1{
+    letter-spacing: 31px;
+}
+.btn{
+    color: #ffffff;
+    position: fixed;
+    right: 320px;
+    top: 160px;
+    height: 40px;
+    width: 155px;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(39,39,39,0.30);
+    box-sizing: border-box;
+    font-size: 1rem;
+    z-index: 1;
+    border: 1px solid rgb(255, 255, 255);
+}
+.btn:hover{
+    background-color: blueviolet;
+    border: 1px solid rgb(255, 255, 255);
+    transition: all ease 1s;
+}
+.iconarea{
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 5px 0px;
+    transform: translateY(-50%);
+}
+.iconarea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    text-decoration:none;
+}
+.iconarea a i{
+    color: rgba(39,39,39,0.80);
+}
+.iconarea a:hover .fa-facebook-f{
+    color: #0051ff;
+}
+.iconarea a:hover .fa-twitter{
+    color: #00acee;
+}
+.iconarea a:hover .fa-instagram{
+    color: #ff00d4;
+}
+.iconarea a:hover .fa-youtube{
+    color: #FF0000;
+}
+
+.productsection{
+    width: 85%;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 40px 20px;
+    align-items: center;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.productsection > h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: #323543;
+    text-align: center;
+    font-weight: 700;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.productbox{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+
+}
+.productbox img{
+    height: 180px;
+}
+.productbox p{
+    color: rgba(39,39,39,0.80);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+}
+.productbox a{
+    color: rgba(39,39,39,0.80);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.buybutton{
+    position: relative;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 30%;
+    bottom: -17%;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+	background:linear-gradient(120deg,#6b60ec 20%,#a166f4);
+    color:#FFFFFF;
+    text-decoration: none;
+	display: none;
+	animation: fade 0.2s;
+}
+.productbox:hover .buybutton{
+    display: flex;
+}
+.productbox:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	background-color:#FFFFFF;
+}
+.productbox:hover a:last-child{
+    color: #fff;
+	transition: all ease 0.3s;
+}
+.aboutsection {
+    display: flex;
+    width: 85%;
+    margin: 50PX auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+.about{
+    width: 40%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.aboutbox{
+    width: 40%;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+.about h1{
+    color: rgba(39,39,39,0.80);
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0px;
+}
+.about h4{
+    color: rgba(39,39,39,0.80);
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+}
+.notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notification h1{
+    font-size: 2rem;
+    color: rgba(39,39,39,0.80);
+}
+.notificationinput{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.103);
+    margin-top: 30px;
+}
+.notificationinput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.notificationbutton{
+    color: #ffffff;
+    height: 40px;
+    width: 120px;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    font-size: 1rem;
+    z-index: 1;
+    border: 1px solid rgb(255, 255, 255);
+}
+.notificationbutton:hover{
+    background-color: blueviolet;
+    transition: all ease 1s;
+}
+footer{
+    background-color: black !important;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: #f2f2f2;
+}
